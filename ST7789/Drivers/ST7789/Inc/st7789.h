@@ -196,7 +196,8 @@ extern SPI_HandleTypeDef ST7789_SPI_PORT;
 #define ST7789_DC_Set() HAL_GPIO_WritePin(ST7789_DC_PORT, ST7789_DC_PIN, GPIO_PIN_SET)
 
 #ifdef USE_BACKLIGHT_CONTROL
-// Backlight control
+
+// Backlight control functions
 #define ST7789_BackLightOn() HAL_GPIO_WritePin(BLK_PORT, BLK_PIN, GPIO_PIN_SET)
 #define ST7789_BackLightOff() HAL_GPIO_WritePin(BLK_PORT, BLK_PIN, GPIO_PIN_RESET)
 #endif
